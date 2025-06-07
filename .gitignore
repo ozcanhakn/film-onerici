@@ -1,0 +1,9 @@
+# Sanal Ortam Klasörü
+.venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# VS Code ayar klasörü
+.vscode/

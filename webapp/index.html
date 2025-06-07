@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akıllı Film Tavsiye Motoru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Akıllı Film Tavsiye Motoru</h1>
+            <p class="subtitle">Size en uygun filmi bulmak için birkaç soruya cevap verin!</p>
+        </header>
+
+        <main id="quiz-container" class="quiz">
+            <div class="question-container">
+                <h2>1. Hangi türleri izlemeyi seversin?</h2>
+                <div class="options-grid">
+                    <label><input type="checkbox" name="genre" value="action"> Aksiyon</label>
+                    <label><input type="checkbox" name="genre" value="comedy"> Komedi</label>
+                    <label><input type="checkbox" name="genre" value="drama"> Dram</label>
+                    <label><input type="checkbox" name="genre" value="scifi"> Bilim Kurgu</label>
+                    <label><input type="checkbox" name="genre" value="horror"> Korku</label>
+                    <label><input type="checkbox" name="genre" value="romance"> Romantik</label>
+                    <label><input type="checkbox" name="genre" value="animation"> Animasyon</label>
+                    <label><input type="checkbox" name="genre" value="documentary"> Belgesel</label>
+                    <label><input type="checkbox" name="genre" value="mystery"> Gizem</label>
+                    <label><input type="checkbox" name="genre" value="fantasy"> Fantastik</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2>2. Bugün nasıl bir ruh halindesin?</h2>
+                <div class="options">
+                    <label><input type="radio" name="mood" value="happy"> Neşeli</label>
+                    <label><input type="radio" name="mood" value="thoughtful"> Düşünceli</label>
+                    <label><input type="radio" name="mood" value="sad"> Üzgün</label>
+                    <label><input type="radio" name="mood" value="excited"> Heyecanlı</label>
+                    <label><input type="radio" name="mood" value="calm"> Sakin</label>
+                    <label><input type="radio" name="mood" value="thrilling"> Gerilim arıyorum</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2>3. Ne kadar zamanın var?</h2>
+                <div class="options">
+                    <label><input type="radio" name="duration" value="short"> <30 dk (kısa film)</label>
+                    <label><input type="radio" name="duration" value="medium"> 1 saat</label>
+                    <label><input type="radio" name="duration" value="long"> 1.5 saat</label>
+                    <label><input type="radio" name="duration" value="very_long"> 2+ saat</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2>4. Filmde karakter gelişimi mi yoksa aksiyon mu ön planda olsun istersin?</h2>
+                <div class="options">
+                    <label><input type="radio" name="focus" value="character"> Karakter odaklı derin hikayeler</label>
+                    <label><input type="radio" name="focus" value="action"> Tempolu olaylar ve aksiyon</label>
+                    <label><input type="radio" name="focus" value="balanced"> İkisi dengeli olsun</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2>5. Hangi dönemden filmler izlemeyi tercih edersin?</h2>
+                <div class="options">
+                    <label><input type="radio" name="era" value="classic"> Klasikler (1960 ve öncesi)</label>
+                    <label><input type="radio" name="era" value="modern"> 70'ler-90'lar</label>
+                    <label><input type="radio" name="era" value="contemporary"> 2000 sonrası</label>
+                    <label><input type="radio" name="era" value="any"> Fark etmez, yeter ki iyi olsun</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2>6. Film dili ya da ülkesi senin için önemli mi?</h2>
+                <div class="options">
+                    <label><input type="radio" name="origin" value="turkish"> Yerli (Türk yapımı)</label>
+                    <label><input type="radio" name="origin" value="hollywood"> Hollywood</label>
+                    <label><input type="radio" name="origin" value="european"> Avrupa sineması</label>
+                    <label><input type="radio" name="origin" value="asian"> Asya sineması (Kore, Japonya vs.)</label>
+                    <label><input type="radio" name="origin" value="any"> Fark etmez</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2>7. Filmi kimle izliyorsun?</h2>
+                <div class="options">
+                    <label><input type="radio" name="company" value="alone"> Tek başıma</label>
+                    <label><input type="radio" name="company" value="family"> Ailemle</label>
+                    <label><input type="radio" name="company" value="partner"> Partnerimle</label>
+                    <label><input type="radio" name="company" value="friends"> Arkadaşlarımla</label>
+                    <label><input type="radio" name="company" value="children"> Çocuklarla</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2>8. Karmaşık, düşündüren filmler mi istersin yoksa kolay izlenir şeyler mi?</h2>
+                <div class="options">
+                    <label><input type="radio" name="complexity" value="mind_bending"> Beyin yakan</label>
+                    <label><input type="radio" name="complexity" value="emotional"> Duygusal yoğunluklu</label>
+                    <label><input type="radio" name="complexity" value="light"> Hafif ve eğlenceli</label>
+                    <label><input type="radio" name="complexity" value="any"> Fark etmez, yeter ki kaliteli olsun</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2>9. Herhangi bir içerikten kaçınmak ister misin?</h2>
+                <div class="options">
+                    <label><input type="checkbox" name="avoid" value="violence"> Şiddet</label>
+                    <label><input type="checkbox" name="avoid" value="sexuality"> Cinsellik</label>
+                    <label><input type="checkbox" name="avoid" value="horror"> Korku/gerilim</label>
+                    <label><input type="checkbox" name="avoid" value="politics"> Politik temalar</label>
+                    <label><input type="checkbox" name="avoid" value="none"> Hayır, sınırlamam yok</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2>10. Daha önce bayıldığın bir film örneği verir misin?</h2>
+                <div class="options">
+                    <input type="text" id="favorite-movie" placeholder="Örnek: Inception, Matrix, vs.">
+                </div>
+            </div>
+        </main>
+
+        <button id="recommend-btn">Tavsiyeleri Getir!</button>
+
+        <section id="results-container" class="results"></section>
+    </div>
+
+    <footer>
+        <p>Tüm film verileri IMDb'den alınmıştır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
